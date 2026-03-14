@@ -40,6 +40,7 @@ class Program
 
             else if (choice == 2)
             {
+                journal.ShowEntryCount();
                 journal.DisplayAll();
             }
 
@@ -56,6 +57,8 @@ class Program
                 string file = Console.ReadLine();
                 journal.LoadFromFile(file);
             }
+
+
         }
     }
 

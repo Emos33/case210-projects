@@ -48,4 +48,9 @@ public class Journal
             _entries.Add(entry);
         }
     }
+
+    public void ShowEntryCount()
+    {
+        Console.WriteLine($"Total Journal Entries: {_entries.Count}");
+    }
 }
