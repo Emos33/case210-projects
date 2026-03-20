@@ -2,8 +2,7 @@ using System;
 //Amos Bello
 // EXCEEDING REQUIREMENTS:
 // - Program can hide only words that are not already hidden
-// - Added support for multiple scriptures (can randomly choose one)
-// - Can load scriptures from a file
+// 
 class Program
 {
     static void Main(string[] args)
