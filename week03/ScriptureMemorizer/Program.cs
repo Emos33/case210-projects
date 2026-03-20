@@ -1,4 +1,5 @@
 using System;
+//Amos Bello
 // EXCEEDING REQUIREMENTS:
 // - Program can hide only words that are not already hidden
 // - Added support for multiple scriptures (can randomly choose one)
