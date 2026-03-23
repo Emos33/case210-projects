@@ -21,13 +21,39 @@ public class Scripture
 
     public void HideRandomWords(int count)
     {
+        List<Word> visibleWords = new List<Word>();
+
+        // Collect only words that are NOT hidden
+        foreach (Word word in _words)
+        {
+            if (!word.IsHidden())
+            {
+                visibleWords.Add(word);
+            }
+        }
+
+        // Stop if no more words to hide
+        if (visibleWords.Count == 0)
+        {
+            return;
+        }
+
         for (int i = 0; i < count; i++)
         {
-            int index = _random.Next(_words.Count);
-            _words[index].Hide();
+            if (visibleWords.Count == 0)
+            {
+                break;
+            }
+
+            int index = _random.Next(visibleWords.Count);
+
+            // Hide selected word
+            visibleWords[index].Hide();
+
+            // Remove it so it won't be selected again
+            visibleWords.RemoveAt(index);
         }
     }
-
     public bool IsCompletelyHidden()
     {
         foreach (Word word in _words)
