@@ -1,0 +1,4 @@
+100
+SimpleGoal|Give a talk|Give a 10 minutes talk|100|True
+EternalGoal|Study the Bible|Study for at least 10 minutes|50
+ChecklistGoal|Attend Temple|Attend at least 3 times|200|300|0|3
